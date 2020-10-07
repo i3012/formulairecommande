@@ -1,0 +1,259 @@
+<! DOCTYPE html >
+<head>
+	<title> commande de carte </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="cc1style.css">
+</head>
+
+<body>
+	<!-- la présentation des étapes et du logo de la poste algérienne et de la carte dahabia -->
+	
+	<!---------->
+ 	<div class="présentation">
+
+		<div class="barid">
+		<!-- ce img est pour le logo de la poste algérienne -->
+			<img src="photo1.png"  style="width: 150px;">
+		
+
+
+		<!-- ce img est pour le logo de la carte dahabia  -->
+				<img src="photo.png" style="width: 200px; float:right;>
+	
+
+		
+		
+		
+		<h2 style="color: #7B7D7D ;text-align: center;"></h2>
+	</div>
+		<div>
+			<h1 style="color: blue;text-align: center;"> Carte EDAHABIA</h1>
+		
+		<hr align="center" width="30%">
+		<h2 style="color: #7B7D7D ;text-align: center;">Commandez votre carte</h2>
+		</div>
+                  <!--------------------------------------------->
+		<div>
+			 <h4 > {<em style="color:red">*</em>} champs obligatoires</h4>
+
+			
+				<a href="terms.html" class="pull-right" target="_blank">Les conditions génerales</a> 
+			<br>
+
+			<div class="etapes" style="border-bottom:0;">
+                
+                  <p style="text-align: center;word-spacing: 100px;">
+                  Étape1 <a title="Remplissez votre formulaire" ></a>
+          
+                  Étape2 <a title="Confirmez votre commande"></a>
+                
+                  Étape3 <a title="Imprimer votre reçu et votre contrat"></a>
+                
+               
+            </div><br><br>
+            	<!----------------------------------------------------------------- -->
+			<fieldset align="center">
+
+				<legend><b>Détails commande</b></legend>
+			<div>
+
+	
+               <!----------------------------------------------------------------- -->
+
+      
+
+		
+	<!------------------------------------------------------------------------------------------->
+	<div class="commande"> <!-- ce div est pour le rempissage des informations  -->
+	<form action="#" method="post">
+
+		<div class="class1"> <!-- ce div est pour le rempissage des Information sur le compte -->
+			<label for="ccp">CCP <span style="color: red ;">*</span></label>
+			<input id="ccp" type="number" name="ccp" placeholder="XXXXXXXXXX">
+
+			<label for="clé">Clé <span style="color: red ;">*</span></label>
+			<input id="clé" type="number" name="clé" placeholder="XX">
+		</div>
+		<br>
+		<hr>
+		<br> <!------------->
+		<div class="class2"><!-- ce div est pour le rempissage des Informations Personnelles et des informations sur la Pièce d'identité qui va utiliser -->
+			<label for="nomprenom"> Nom et Prénom <span style="color: red ;">*</span></label>
+			<input type="text" name="nomprenom" id="nomprenom" placeholder="NOM">
+			<input type="text" name="nomprenom" id="nomprenom" placeholder="PRENOM"> <br><br>
+			 <button style="padding:2px 6px; " type="button" >?</button>
+
+			<label for="Pièce_identité">Pièce d'identité <span style="color: red ;">*</span></label> 
+			<select id="Pièce_identité" name="Pièce_identité">
+				<option value="choisir">-choisir-</option>
+				<option value="">Carte Nationale d'Identité</option>
+				<option value="Permis_conduire">Permis de conduire</option>
+				<option value="Passeport ">Passeport </option>
+			</select>
+			<input type="number" name="Numéro_piece" placeholder="Numéro de la piece" ><br><br>
+
+			<label for="Date_délivrence">Date de délivrence</label>
+			<input type="Date" name="Date de délivrence" id="Date_délivrence">
+
+			<label for="Délivréepar">Délivrée par </label>
+			<input type="text" name="Délivrée par" id="Délivrée par" placeholder="DAIRA"><br><br>
+
+			<label for="Validedu">Valide du</label>
+			<input type="date" name="Valide" id="Validedu">
+			<label for="valideau"> au </label>
+			<input type="date" name="valide" id="valideau"> <br><br>
+
+			<label for="Adresse">Adresse<span style="color: red ;">*</span> </label>
+			<input type="text" name="Adresse" id="Adresse" placeholder="RUE DE LA POSTE BT 4 N 3 "><br><br>
+
+			<label for="E-Mail">E-Mail <span style="color: red ">*</span> </label>
+			<input type="email" name="E-Mail" id="E-Mail" placeholder="identifiant@exemple.com"><br><br>
+
+			<label for="Numéro_mobile">Numéro mobile <span style="color: red;">*</span></label>
+			<select id="Numéromobile">
+				<option value="Choisir">Choisir</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+			</select>
+			<input type="tel" name="Numéro_mobile" id="Numéro_mobile" placeholder="XX XX XX XX">
+		</div>
+		<br>
+		<hr>
+		<div class="class3"> <!-- ce div est pour le bureau de poste dans lequel il récupére sa carte-->
+			<p style="color: red ;">Veuillez choisir le bureau de poste dans lequel vous souhaitez récupérer votre carte :</p>
+			
+			<label>Région <span style="color: red ;">*</span></label>
+			 <select id="wilaya" name="wilaya">
+                  <option value=''>-- Wilaya --</option>
+                  <option value=ADRAR>ADRAR - 01</option>
+                  <option value=CHLEF>CHLEF - 02</option>
+                  <option value=LAGHOUAT>LAGHOUAT - 03</option>
+                  <option value=OUM-EL-BOUAGHI>OUM-EL-BOUAGHI - 04</option>
+                  <option value=BATNA>BATNA - 05</option>
+                  <option value=BEJAIA>BEJAIA - 06</option>
+                  <option value=BISKRA>BISKRA - 07</option>
+                  <option value=BECHAR>BECHAR - 08</option>
+                  <option value=BLIDA>BLIDA - 09</option>
+                  <option value=BOUIRA>BOUIRA - 10</option>
+                  <option value=TAMANRASSET>TAMANRASSET - 11</option>
+                  <option value=TEBESSA>TEBESSA - 12</option>
+                  <option value=TLEMCEN>TLEMCEN - 13</option>
+                  <option value=TIARET>TIARET - 14</option>
+                  <option value=TIZI-OUZOU>TIZI-OUZOU - 15</option>
+                  <option value=ALGER>ALGER - 16</option>
+                  <option value=DJELFA>DJELFA - 17</option>
+                  <option value=JIJEL>JIJEL - 18</option>
+                  <option value=SETIF>SETIF - 19</option>
+                  <option value=SAIDA>SAIDA - 20</option>
+                  <option value=SKIKDA>SKIKDA - 21</option>
+                  <option value=SIDI-BEL-ABBES>SIDI-BEL-ABBES - 22</option>
+                  <option value=ANNABA>ANNABA - 23</option>
+                  <option value=GUELMA>GUELMA - 24</option>
+                  <option value=CONSTANTINE>CONSTANTINE - 25</option>
+                  <option value=MEDEA>MEDEA - 26</option>
+                  <option value=MOSTAGANEM>MOSTAGANEM - 27</option>
+                  <option value=M-SILA>M-SILA - 28</option>
+                  <option value=MASCARA>MASCARA - 29</option>
+                  <option value=OUARGLA>OUARGLA - 30</option>
+                  <option value=ORAN>ORAN - 31</option>
+                  <option value=EL-BAYADH>EL-BAYADH - 32</option>
+                  <option value=ILLIZI>ILLIZI - 33</option>
+                  <option value=BORDJ-BOU-ARRERIDJ>BORDJ-BOU-ARRERIDJ - 34</option>
+                  <option value=BOUMERDES>BOUMERDES - 35</option>
+                  <option value=EL-TARF>EL-TARF - 36</option>
+                  <option value=TINDOUF>TINDOUF - 37</option>
+                  <option value=TISSEMSILT>TISSEMSILT - 38</option>
+                  <option value=EL-OUED>EL-OUED - 39</option>
+                  <option value=KHENCHELA>KHENCHELA - 40</option>
+                  <option value=SOUK-AHRAS>SOUK-AHRAS - 41</option>
+                  <option value=TIPAZA>TIPAZA - 42</option>
+                  <option value=MILA>MILA - 43</option>
+                  <option value=AIN-DEFLA>AIN-DEFLA - 44</option>
+                  <option value=NAAMA>NAAMA - 45</option>
+                  <option value=AIN-TEMOUCHENT>AIN-TEMOUCHENT - 46</option>
+                  <option value=GHARDAIA>GHARDAIA - 47</option>
+                  <option value=RELIZANE>RELIZANE - 48</option>                
+              </select>
+              <br><br>
+
+            </div>  
+
+            <div class="Questionsecrète"> <!-- ce div est pour la Question secrète -->
+                <label for="Code_postal">Code postal <span style="color: red ; ">*</span></label>
+                <input type="text" name="Code postal" id="Code postal">
+                <br><hr><br>
+                <label for="Question_secrète">Question secrète<span style="color: red;">*</span></label>
+          	    <select name="question" id="question" >
+                  <option value="">-- Choisir --</option>
+                  <option value="q1" >Quel était votre surnom d'enfance?</option>
+                  <option value="q2" >Dans quel cité vos parent se sont mariés</option>
+                  <option value="q3" >Quel était le nom de votre école primaire?</option>
+                  <option value="q4" >Quel était le nom de l'entreprise de vote premier emploi?</option>
+                  <option value="q5" >Autre mots?</option>
+                </select>
+                <br><br>
+
+                <label for="Réponse"> Réponse <span style="color: red;">*</span></label>
+                <input type="text" name="Réponse" id="Réponse">
+                <br>
+
+                <p style="color: red ;">Veuillez vous <span style="text-decoration: underline;"> SOUVENIR </span> de votre réponse.</p>
+			</div> 
+			<br><hr><br>
+
+			<div class="class4">
+
+            	<img src="index.png"  style="border:3px solid white"><br>
+				<input name="code" type="text" placeholder="Entrez le code de l'image" id="code">
+				<h5>Cliquez dessus pour changer le code de l'image</h5>
+			</div>
+
+			<br><hr><br>
+
+			<span style="color: red;">[*]</span> Champ obligatoire
+
+			<input type="submit" value="Valider" id="valider" name="valider" >
+
+            <input id ="visuliser" name="visuliser" type="button" value="Visualiser mes informations">
+
+            <input type="checkbox" /> J'accepte <a href="terms.html" target="_blank">les conditions</a>
+
+            <h5 style="color: red;">Veuillez visualiser vos informations avant de valider.</h5>
+
+
+	</form>
+	</div>
+
+	 	 <!------------------------------------------------------------------------->
+
+           <p style="text-align: center;"> <img src="baridi.png" style ="width: 100Px;"  />
+            <em>Tous droits réservés. Algérie Poste  &copy; 2020 </em></p>
+        
+        <!------------------------------------------------------------------------->
+       
+          
+           </br></br></br></br>
+         
+         
+           
+         
+          </br></br></br></br></br></br></br></br></br>
+        <!------------------------------------------------------------------------->
+                <p style="width:113%;white-space: normal;text-align: left;"><u>Vous avez déjà effectué une commande :</u> <br><br>
+            
+         <!------------------------------------------------------------------------->
+                <p style="width:113%;white-space: normal;text-align: left;"  >Changer votre bureau de réception</p>
+                
+               
+               	<p style="width:113%;white-space: normal;text-align: left;">Statut Commande</a>
+             	<br>
+             	
+              	<p style="width:113%;white-space: normal;text-align: left;" >Imprimer votre reçu </p>
+                
+              <br>
+               <p style ="text-align: left;""><img src="dz.png"><label class="col-sm-3">العربية</label></p>
+            
+
+
+</body>
